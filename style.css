@@ -1,28 +1,45 @@
+
+body {
+	margin: 0;
+}
+html
+{
+	background-color: #ABF62D;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+}
 div.scrollmenu {
-	background-color: #333;
+	background-color: #D6A3FB;
 	overflow: auto;
+	margin: auto;
 	white-space: nowrap;
-	position: fixed; top: 0;
+	position: fixed;
+	top: 0;
 	left: 0;
 	z-index: 10;
-	width: 100%;
+	width: 100vw;
 	height: 50px;
-  }
-  
-  div.scrollmenu a {
-	display: inline-block;
-	color: white;
-	text-align: center;
-	padding: 14px;
+	display: flex;
+}
+
+div.scrollmenu a {
+	flex: 1;
 	text-decoration: none;
-  }
+	display: inline-block;
+	text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black;
+	margin: auto;
+	justify-content: center;
+	color: #ABF62D;
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 14px;
+}
   
   div.scrollmenu a:hover {
-	background-color: #777;
+	background-color:#ABF62D;
+	text-shadow: 1px 1px 0 #D6A3FB, 2px 2px 0 #D6A3FB, 3px 3px 0 #D6A3FB;
+	color: white;
   }
-span + span {
-    margin-left: 10vw;
-}
 p
 {
 	position: relative;
