@@ -1,7 +1,10 @@
 body,
 html {
   height: 100%;
-  color: black;
+  color: white;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
   background-color: black;
 }
 
@@ -9,14 +12,21 @@ body.slider__body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .slider__container {
+  font-size: 0.5rem;
   position: fixed;
   display: block;
   height: 100%;
   width: 100%;
-  margin: 0;
+  margin: 10px;
   padding: 0;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -43,28 +53,78 @@ body.slider__body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-#slide1{
-  background-color: aqua;
+#slide1 {
+  background-color: #03001c;
 }
-#slide2{
-	background-color: blue;
-  }
-  #slide3{
-	background-color: green;
-  }
+#slide2 {
+  background-color: #301e67;
+}
+#slide3 {
+  background-color: #5b8fb9;
+}
+#slide4 {
+  background-color: #b6eada;
+}
 
-  section > span {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 7vw;
-	font-family: sans-serif;
-	text-transform: uppercase;
-	color: #fff;
+section > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7vw;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+p {
+  text-align: center;
+  margin: auto;
+  font-size: 200px;
+}
+#slide1 p {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #301e67,
+    0 0 82px #301e67, 0 0 92px #301e67, 0 0 102px #301e67, 0 0 151px #301e67;
+}
+
+.typewriter {
+  margin: auto;
+  text-align: center;
+  font-family: "arial";
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  width: 80vw;
+  animation: typing;
+  animation-duration: 2.5s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
-  p {
+  to {
+    width: 100%;
+  }
+}
+#boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 65%;
+}
+
+#box {
+	display: flexbox;
+	width: calc(33.33% - 10px);
+	box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #301e67,
+    0 0 82px #301e67, 0 0 92px #301e67, 0 0 102px #301e67, 0 0 151px #301e67;
+	margin: 1%;
+	height: 30%;
+	background-color: #301e67;
 	text-align: center;
-	margin: auto;
-	font-size: 200px;
+	line-height: 100px;
+	font-size: 20px;
   }
