@@ -6,6 +6,12 @@ html {
   margin: 0;
   padding: 0;
   background-color: black;
+  box-sizing: border-box;
+}
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
 }
 
 body.slider__body {
@@ -132,4 +138,71 @@ section > span {
 }
 #box:hover #boxtitle {
   display: none;
+}
+#calc {
+  width: 500px;
+  height: 600px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  background-color: #03001c;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 5px gray;
+}
+#screen {
+  width: 90%;
+  height: 15%;
+  margin-top: 10px;
+  margin-left: 5%;
+  background-color: gray;
+  border: solid 2px black;
+}
+#buttons {
+	background-color: gray;
+  width: 65%;
+  display: inline-block;
+  height: 80%;
+  margin-top: 10px;
+  margin-left: 5%;
+  border: solid 2px black;
+}
+#operations {
+  width: 20%;
+  background-color: gray;
+  display: inline-block;
+  height: 80%;
+  margin-top: 10px;
+  border: solid 2px black;
+  margin-left: 5%;
+}
+#operations #buttons {
+  display: inline-block;
+}
+#button {
+  display: flexbox;
+  font-size: 6rem;
+  width: 30%;
+  color: white;
+  margin: 0;
+  margin-left: 2%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%;
+  background-color: black;
+}
+#op {
+  display: flex;
+  font-size: 6rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  margin: 0;
+  border-radius: 25%;
+  background-color: black;
+}
+#op:hover,
+#button:hover {
+  scale: 0.95;
 }
