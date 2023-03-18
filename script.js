@@ -1,3 +1,5 @@
+
+
 function typeline()
 {
 	const paragraph = "Starting my H journey with this page.Starting my HT journey with this page.Starting my HTM journey with this page.Starting my HTML journey with this page.Starting my  journey with this page.Starting my C journey with this page.Starting my CS journey with this page.Starting my CSS journey with this page. Starting my  journey with this page. Starting my J journey with this page.Starting my JS journey with this page.Starting my  journey with this page.Starting my H journey with this page.Starting my HT journey with this page.Starting my HTM journey with this page.Starting my HTML journey with this page.Starting my HTML/ journey with this page.Starting my HTML/C journey with this page.Starting my HTML/CS journey with this page.Starting my HTML/CSS journey with this page.Starting my HTML/CSS/ journey with this page.Starting my HTML/CSS/J journey with this page.Starting my HTML/CSS/JS journey with this page.";
