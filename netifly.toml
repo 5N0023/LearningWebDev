@@ -1,5 +1,0 @@
-[build]
-    publish = "."
-[[redirects]]
-    from = "/pages"
-    to = "calc"
