@@ -9,98 +9,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div class="dd-wrapper">
-		<div class="sidebar">
-			<div class="sidebar-content">
-				<div class="sidebar-list">
-					<ul class="sidebar-list-menu">
-						<span class="sidebar-list-menu-active-bar"></span>
-						<li><a href="#content_1" class="active" dd-active-tab="1" dd-sidebar-tab="#040326">HOME</a></li>
-						<li><a href="#content_2" dd-active-tab="2" dd-sidebar-tab="#7C8C42">CALCU</a></li>
-						<li><a href="#content_3" dd-active-tab="3" dd-sidebar-tab="#DCF230">ABOUT ME</a></li>
-						<li><a href="#content_4" dd-active-tab="4" dd-sidebar-tab="#F2E641">MY TECH</a></li>
-						<li><a href="#content_5" dd-active-tab="5" dd-sidebar-tab="#F25116">SOCIAL MEDIA</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="content">
-			<div id="content_1" class="content-container">
+
 				<div class="content--center">
 					<span class="title-lite">HOME PAGE</span>
 					<h1 id="typewriter"></h1>
 					<div id="boxes">
-					  <div id="box"><div id="boxtitle">SLIDE 1</div><div id = "content">On the first slide, you will find an overview of the contents contained within each subsequent slide.</div></div>
-					  <div id="box"><div id="boxtitle">SLIDE 2</div><div id = "content">On slide 2, there is a straightforward calculator that you can utilize.</div></div>
-					  <div id="box"><div id="boxtitle">SLIDE 3</div><div id = "content">Coming soon</div></div>
-					  <div id="box"><div id="boxtitle">SLIDE 4</div><div id = "content">Coming soon</div></div>
-					  <div id="box"><div id="boxtitle">SLIDE 5</div><div id = "content">Coming soon</div></div>
-					  <div id="box"><div id="boxtitle">SLIDE 6</div><div id = "content">Coming soon</div></div>
+					<button id="box" onclick="window.location.href='pages/calc.html'"><div id="boxtitle">calculator</div><div id = "content">On the first slide, you will find an overview of the contents contained within each subsequent slide.</div></button>
 					</div>
-				</div>
-			</div>
-			<div id="content_2" class="content-container">
-				<div class="content--center">
-					<span class="title-lite">#slide 2</span>
-					<div id="calc">
-						<div>
-							<input type="text" id="result" placeholder="0" readonly>
-						  </div>
-						  <div>
-							<button  id = "button" class="hiddenbutton"></button>
-							<button  id = "button" class="hiddenbutton"></button>
-							<button  id = "button" class="hiddenbutton"></button>
-							<button  id = "button" onclick="clearResult()" >C</button>
-						  </div>
-						  <div>
-							<button  id = "button" onclick="buttonClick('1')">1</button>
-							<button  id = "button" onclick="buttonClick('2')">2</button>
-							<button  id = "button" onclick="buttonClick('3')">3</button>
-							<button  id = "button" onclick="buttonClick('+')">+</button>
-						  </div>
-						  <div>
-							<button  id = "button" onclick="buttonClick('4')">4</button>
-							<button  id = "button" onclick="buttonClick('5')">5</button>
-							<button  id = "button" onclick="buttonClick('6')">6</button>
-							<button  id = "button" onclick="buttonClick('-')">-</button>
-						  </div>
-						  <div>
-							<button  id = "button" onclick="buttonClick('7')">7</button>
-							<button  id = "button" onclick="buttonClick('8')">8</button>
-							<button  id = "button" onclick="buttonClick('9')">9</button>
-							<button  id = "button" onclick="buttonClick('*')">*</button>
-						  </div>
-						  <div>
-							<button  id = "button" onclick="buttonClick('0')">0</button>
-							<button  id = "button" onclick="buttonClick('.')">.</button>
-							<button  id = "button" onclick="buttonClick('=')">=</button>
-							<button  id = "button" onclick="buttonClick('/')">/</button>
-						  </div>
-						  
-					</div>
-				</div>
-			</div>
-			<div id="content_3" class="content-container">
-				<div class="content--center">
-					<span class="title-lite">#slide 3</span>
-					<h2 class="title">Content - slide 3</h2>
-				</div>
-			</div>
-			<div id="content_4" class="content-container">
-				<div class="content--center">
-					<span class="title-lite">#slide 1</span>
-					<h2 class="title">Content - slide 4</h2>
-				</div>
-			</div>
-			<div id="content_5" class="content-container">
-				<div class="content--center">
-					<span class="title-lite">#slide 5</span>
-					<h2 class="title">Content - slide 5</h2>
-				</div>
-			</div>
-		</div>
+
 	</div>
-	<script src="jquery.min.js"></script>
-	<script src="script.js"></script>
 </body>
 </html>

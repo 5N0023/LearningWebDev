@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5N0023</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+					<div id="calc">
+						<div>
+							<input type="text" id="result" placeholder="0" readonly>
+						  </div>
+						  <div>
+							<button  id = "button" class="hiddenbutton"></button>
+							<button  id = "button" class="hiddenbutton"></button>
+							<button  id = "button" class="hiddenbutton"></button>
+							<button  id = "button" onclick="clearResult()" >C</button>
+						  </div>
+						  <div>
+							<button  id = "button" onclick="buttonClick('1')">1</button>
+							<button  id = "button" onclick="buttonClick('2')">2</button>
+							<button  id = "button" onclick="buttonClick('3')">3</button>
+							<button  id = "button" onclick="buttonClick('+')">+</button>
+						  </div>
+						  <div>
+							<button  id = "button" onclick="buttonClick('4')">4</button>
+							<button  id = "button" onclick="buttonClick('5')">5</button>
+							<button  id = "button" onclick="buttonClick('6')">6</button>
+							<button  id = "button" onclick="buttonClick('-')">-</button>
+						  </div>
+						  <div>
+							<button  id = "button" onclick="buttonClick('7')">7</button>
+							<button  id = "button" onclick="buttonClick('8')">8</button>
+							<button  id = "button" onclick="buttonClick('9')">9</button>
+							<button  id = "button" onclick="buttonClick('*')">*</button>
+						  </div>
+						  <div>
+							<button  id = "button" onclick="buttonClick('0')">0</button>
+							<button  id = "button" onclick="buttonClick('.')">.</button>
+							<button  id = "button" onclick="buttonClick('=')">=</button>
+							<button  id = "button" onclick="buttonClick('/')">/</button>
+						  </div>
+						  
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="calc.js"></script>
+</body>
+</html>
