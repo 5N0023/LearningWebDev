@@ -1,26 +1,38 @@
-
-
-function typeline()
-{
-	const paragraph = "Starting my H journey with this page.Starting my HT journey with this page.Starting my HTM journey with this page.Starting my HTML journey with this page.Starting my  journey with this page.Starting my C journey with this page.Starting my CS journey with this page.Starting my CSS journey with this page. Starting my  journey with this page. Starting my J journey with this page.Starting my JS journey with this page.Starting my  journey with this page.Starting my H journey with this page.Starting my HT journey with this page.Starting my HTM journey with this page.Starting my HTML journey with this page.Starting my HTML/ journey with this page.Starting my HTML/C journey with this page.Starting my HTML/CS journey with this page.Starting my HTML/CSS journey with this page.Starting my HTML/CSS/ journey with this page.Starting my HTML/CSS/J journey with this page.Starting my HTML/CSS/JS journey with this page.";
-      const lines = paragraph.split(".");
-      const typewriter = document.getElementById("typewriter");
-	  typewriter.style.textAlign = 'center';
-	  typewriter.style.fontSize = '20px';
-      let currentIndex = 0;
-
-      const typeLine = () => {
-        if (currentIndex == lines.length - 1) {
-          return;
+// Trigger event on tab click
+$('[dd-sidebar-tab]').on('click', function() {
+	$('.sidebar-list-menu-active-bar').css('margin-top', ( $(this).attr('dd-active-tab') - 1) * $(this).height());
+	$('.sidebar-content').css('background', $(this).attr('dd-sidebar-tab'));
+	$('.sidebar-list-menu li a').removeClass('active');
+	$(this).addClass('active');
+	$('html, body').animate({
+        scrollTop: $("#content_"+$(this).attr('dd-active-tab')).offset().top
+    }, 500);
+});
+// SCroll event
+$(window).scroll(function(event) {
+	var scrollPos = $(document).scrollTop();
+    $('.sidebar-list-menu li a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+    		$('.sidebar-list-menu li a').removeClass("active");
+        	currLink.addClass('active');
+            $('.sidebar-list-menu-active-bar').css('margin-top', ( currLink.attr('dd-active-tab') - 1) * currLink.height() );
+            $('.sidebar-content').css('background', currLink.attr('dd-sidebar-tab'));
         }
+    });
+});
+var result = document.getElementById("result");
 
-        const currentLine = lines[currentIndex];
-        typewriter.innerText = currentLine.trim();
-        currentIndex++;
-        setTimeout(() => {
-          typeLine();
-        }, 500);
-      };
+function buttonClick(value) {
+	
+  if (value == "=") {
+    result.value = eval(result.value);
+  } else {
+    result.value += value;
+  }
+}
 
-      typeLine();
+function clearResult() {
+  result.value = "";
 }
