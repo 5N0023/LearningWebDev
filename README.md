@@ -1,2 +1,2 @@
 # LearningWebDev
-https://snoozema.netlify.app/
+https://mlektaib.netlify.app/
