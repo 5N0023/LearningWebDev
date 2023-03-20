@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>calculator</title>
@@ -7,60 +8,97 @@
 	<link rel="stylesheet" type="text/css" href="../../css/calc.css">
 	<link rel="stylesheet" type="text/css" href="../../css/common.css">
 	<script src="../../script.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
+
 <body>
 	<input type="checkbox" id="active">
-    <label for="active" class="menu-btn"><span></span></label>
-    <label for="active" class="close"></label>
-    <div class="wrapper">
-      <ul>
-<li><a class="ajax-link" href="../../index.html">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Gallery</a></li>
-<li><a href="#">Feedback</a></li>
-</ul>
-</div>
-					<div id="calc">
-						<div>
-							<input type="text" id="result" placeholder="0" readonly>
-						  </div>
-						  <div>
-							<button  id = "button" class="hiddenbutton"></button>
-							<button  id = "button" class="hiddenbutton"></button>
-							<button  id = "button" class="hiddenbutton"></button>
-							<button  id = "button" onclick="clearResult()" >C</button>
-						  </div>
-						  <div>
-							<button  id = "button" onclick="buttonClick('1')">1</button>
-							<button  id = "button" onclick="buttonClick('2')">2</button>
-							<button  id = "button" onclick="buttonClick('3')">3</button>
-							<button  id = "button" onclick="buttonClick('+')">+</button>
-						  </div>
-						  <div>
-							<button  id = "button" onclick="buttonClick('4')">4</button>
-							<button  id = "button" onclick="buttonClick('5')">5</button>
-							<button  id = "button" onclick="buttonClick('6')">6</button>
-							<button  id = "button" onclick="buttonClick('-')">-</button>
-						  </div>
-						  <div>
-							<button  id = "button" onclick="buttonClick('7')">7</button>
-							<button  id = "button" onclick="buttonClick('8')">8</button>
-							<button  id = "button" onclick="buttonClick('9')">9</button>
-							<button  id = "button" onclick="buttonClick('*')">*</button>
-						  </div>
-						  <div>
-							<button  id = "button" onclick="buttonClick('0')">0</button>
-							<button  id = "button" onclick="buttonClick('.')">.</button>
-							<button  id = "button" onclick="buttonClick('=')">=</button>
-							<button  id = "button" onclick="buttonClick('/')">/</button>
-						  </div>
-						  
-					</div>
-				</div>
+	<label for="active" class="menu-btn"><span></span></label>
+	<label for="active" class="close"></label>
+	<div class="wrapper">
+		<ul>
+			<li><a class="ajax-link" href="../../index.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">Feedback</a></li>
+		</ul>
+	</div>
+	<div class="calccont">
+		<div id="calc">
+			<div>
+				<input type="text" id="result" placeholder="0" readonly>
+			</div>
+			<div>
+				<button id="button" class="hiddenbutton"></button>
+				<button id="button" class="hiddenbutton"></button>
+				<button id="button" class="hiddenbutton"></button>
+				<button id="button" onclick="clearResult()">C</button>
+			</div>
+			<div>
+				<button id="button" onclick="buttonClick('1')">1</button>
+				<button id="button" onclick="buttonClick('2')">2</button>
+				<button id="button" onclick="buttonClick('3')">3</button>
+				<button id="button" onclick="buttonClick('+')">+</button>
+			</div>
+			<div>
+				<button id="button" onclick="buttonClick('4')">4</button>
+				<button id="button" onclick="buttonClick('5')">5</button>
+				<button id="button" onclick="buttonClick('6')">6</button>
+				<button id="button" onclick="buttonClick('-')">-</button>
+			</div>
+			<div>
+				<button id="button" onclick="buttonClick('7')">7</button>
+				<button id="button" onclick="buttonClick('8')">8</button>
+				<button id="button" onclick="buttonClick('9')">9</button>
+				<button id="button" onclick="buttonClick('*')">*</button>
+			</div>
+			<div>
+				<button id="button" onclick="buttonClick('0')">0</button>
+				<button id="button" onclick="buttonClick('.')">.</button>
+				<button id="button" onclick="buttonClick('=')">=</button>
+				<button id="button" onclick="buttonClick('/')">/</button>
 			</div>
 		</div>
 	</div>
+	</div>
+	<footer>
+		<div class="article">
+			<div class="left box">
+				<div class="upper">
+					<div class="topic">About us</div>
+					<p>I am a student at 1337 School (42 Network) studying software engineering..</p>
+				</div>
+				<div class="lower">
+					<div class="topic">Contact us</div>
+					<div class="email">
+						<a href="#"><i class="fas fa-envelope"></i>lektaibim@gmail.com</a>
+					</div>
+				</div>
+			</div>
+			<div class="middle box">
+				<div class="topic">MY Services</div>
+				<div><a href="#">Software source aPI, Development</a></div>
+				<div><a href="#">Software dev Source code, Reasearch</a></div>
+			</div>
+			<div class="right box">
+				<div class="topic">Social Media</div>
+				<form action="#">
+					<div class="media-icons">
+						<a href="#"><i class="fab fa-github"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</footer>
 	<script src="calc.js"></script>
 </body>
+
 </html>
